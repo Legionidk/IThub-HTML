@@ -1,0 +1,1 @@
+In this repository i'm collecting all my projects and notes from lessons.
