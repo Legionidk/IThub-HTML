@@ -1,0 +1,1 @@
+On this lesson we figure out how stupid we are.
