@@ -1,1 +1,1 @@
-In this repository i'm collecting all my projects and notes from lessons.
+In this repository i'm collecting all my projects and lessons notes from **IThub College SPb**.

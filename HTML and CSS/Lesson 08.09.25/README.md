@@ -1,0 +1,1 @@
+In this lesson we have learned **basic tags sintaxis**. Examples in [main.html](main.html).
