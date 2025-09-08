@@ -1,0 +1,1 @@
+On this lesson we have practice with `Math.random()` and string methods.
