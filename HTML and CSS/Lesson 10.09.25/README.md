@@ -1,0 +1,1 @@
+On this lesson we have learned more about tags in **HTML**.
