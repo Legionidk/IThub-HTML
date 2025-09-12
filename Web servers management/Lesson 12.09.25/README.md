@@ -1,0 +1,1 @@
+On this lesson we have learned about some **HTML tags**, **HTTP methods** and they structure.
