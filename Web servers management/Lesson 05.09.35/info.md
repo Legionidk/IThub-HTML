@@ -24,7 +24,6 @@
     - Reply from ::1: time<1ms
     - Reply from ::1: time<1ms
     - Reply from ::1: time<1ms
-    - 
     - Ping statistics for ::1:
         - Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
     - Approximate round trip times in milli-seconds:
@@ -35,7 +34,6 @@
     - Reply from 10.11.20.1: bytes=32 time=1ms TTL=64
     - Reply from 10.11.20.1: bytes=32 time=3ms TTL=64
     - Reply from 10.11.20.1: bytes=32 time=3ms TTL=64
-    -
     - Ping statistics for 10.11.20.1:
         - Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
     - Approximate round trip times in milli-seconds:
@@ -46,7 +44,6 @@
     - Reply from 8.8.8.8: bytes=32 time=8ms TTL=111
     - Reply from 8.8.8.8: bytes=32 time=8ms TTL=111
     - Reply from 8.8.8.8: bytes=32 time=16ms TTL=111
-    -
     - Ping statistics for 8.8.8.8:
         - Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
     - Approximate round trip times in milli-seconds:
@@ -57,7 +54,6 @@
     - Reply from 77.88.44.55: bytes=32 time=15ms TTL=58
     - Reply from 77.88.44.55: bytes=32 time=15ms TTL=58
     - Reply from 77.88.44.55: bytes=32 time=15ms TTL=58
-    -
     - Ping statistics for 77.88.44.55:
         - Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
     - Approximate round trip times in milli-seconds:

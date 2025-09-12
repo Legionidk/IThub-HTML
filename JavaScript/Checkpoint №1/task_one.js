@@ -28,7 +28,7 @@ else
 if (range === "day") range = "день";
 else if (range === "week") range = "неделю";
 else if (range === "month") range = "месяц";
-else range = "(не указано)";
+else range = "(время указано неверно)";
 
 const result = `${price} в ${range}`;
 

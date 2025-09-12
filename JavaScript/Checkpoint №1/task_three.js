@@ -36,7 +36,8 @@ switch (sign){
     case "*":
         result = a*b
     case "/":
-        result = a/b
+        if (b === 0) result = "На ноль делить нельзя!"
+        else result = a/b
     case "+":
         result = a+b
     case "-":
