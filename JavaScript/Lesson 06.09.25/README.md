@@ -1,1 +1,0 @@
-On this lesson we have learned about **strings** and **numbers**, how to work with them and **basic operators**.

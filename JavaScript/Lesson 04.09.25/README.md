@@ -1,1 +1,0 @@
-On this lesson we have learned how to implement **JavaScript** in **.html**.
