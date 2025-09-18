@@ -1,1 +1,0 @@
-On this lesson we have set up workspace in **Visual Studio Code**. We have installed **Prettier** for code formatting and **Live Server** fot hosting .html on `localhost`.
