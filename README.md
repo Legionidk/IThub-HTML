@@ -1,5 +1,5 @@
 # IThub workspace
-Repository for some disciplines from **IThub College** where i'm study.
-# Other repositories
-**Some disciplines** are separated to another repositories:
+Это репозиторий в котором я храню свои конспекты и некоторые контрольные точки из своего колледжа.
+# Другие репозитории
+Некоторые дисциплины требуют наличия для них отдельных репозиториев для удобства сдачи контрольных точек:
 - [JavaScript](https://github.com/Legionidk/IThub-JavaScript)
