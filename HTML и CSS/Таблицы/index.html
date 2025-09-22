@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            td,
+            th {
+                border: 1px solid black;
+                padding: 5px;
+            }
+            table {
+                border-collapse: collapse;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>
+            <a href="src/index.html">Задание из темы на LXP</a>
+        </h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Фамилия</th>
+                    <th>Имя</th>
+                    <th>Отчество</th>
+                    <th>Оценка</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Иванов</td>
+                    <td>Иван</td>
+                    <td>Иванович</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>Петров</td>
+                    <td>Петр</td>
+                    <td>Петрович</td>
+                    <td rowspan="2">5</td>
+                </tr>
+                <tr>
+                    <td>Федоров</td>
+                    <td>Федор</td>
+                    <td>Федорович</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Итого</td>
+                    <td colspan="2">Все на месте, спортсмены</td>
+                    <td>4.66</td>
+                </tr>
+            </tfoot>
+        </table>
+    </body>
+</html>
