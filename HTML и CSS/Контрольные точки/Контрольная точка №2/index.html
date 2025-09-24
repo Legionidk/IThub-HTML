@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Checkpoint #2</title>
+        <style>
+            #formTable th {
+                text-align: end;
+            }
+            #table {
+                border-collapse: collapse;
+                text-align: center;
+                th,
+                td {
+                    border: 1px solid black;
+                    padding: 5px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <h1>Coffee blog</h1>
+            <table id="formTable">
+                <tr>
+                    <th>Название напитка</th>
+                    <td>
+                        <input name="title" placeholder="Американо" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>Сорт кофе</th>
+                    <td>
+                        <select name="sort">
+                            <option value="Гватемала">Гватемала</option>
+                            <option value="Арабика">Гватемала</option>
+                            <option value="Робуста">Робуста</option>
+                            <option value="Либерика">Либерика</option>
+                            <option value="Эксцельса">Эксцельса</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Крепость обжарки</th>
+                    <td>
+                        <input
+                            type="radio"
+                            name="strong"
+                            value="Крепкая"
+                            id="1"
+                        />
+                        <label>Крепкая</label>
+                        <br />
+                        <input
+                            type="radio"
+                            name="strong"
+                            value="Средняя"
+                            id="2"
+                        />
+                        <label>Средняя</label>
+                        <br />
+                        <input
+                            type="radio"
+                            name="strong"
+                            value="Легкая"
+                            id="3"
+                        />
+                        <label>Легкая</label>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Изображение</th>
+                    <td>
+                        <input
+                            type="url"
+                            placeholder="http://site.com/image.png"
+                            name="image"
+                        />
+                    </td>
+                </tr>
+                <tr>
+                    <th>Стоимость напитка</th>
+                    <td>
+                        <input type="number" placeholder="100" name="cost" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>Описание</th>
+                    <td>
+                        <textarea
+                            name="description"
+                            placeholder="Немного про напиток"
+                            rows="5"
+                        ></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td>
+                        <input type="submit" value="Добавить напиток" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <br />
+        <table id="table">
+            <thead>
+                <tr>
+                    <th>Изображение</th>
+                    <th>Название</th>
+                    <th>Сорт</th>
+                    <th>Крепость обжарки</th>
+                    <th>Стоимость</th>
+                    <th>Описание</th>
+                </tr>
+            </thead>
+        </table>
+        <script src="https://queen-leksa.github.io/111/script.js"></script>
+    </body>
+</html>
