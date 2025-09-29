@@ -24,15 +24,23 @@
             <h1>Coffee blog</h1>
             <table id="formTable">
                 <tr>
-                    <th>Название напитка</th>
+                    <th>
+                        <label for="coffeeTitle">Название напитка</label>
+                    </th>
                     <td>
-                        <input name="title" placeholder="Американо" />
+                        <input
+                            name="title"
+                            placeholder="Американо"
+                            id="coffeeTitle"
+                        />
                     </td>
                 </tr>
                 <tr>
-                    <th>Сорт кофе</th>
+                    <th>
+                        <label for="coffeeSort">Сорт кофе</label>
+                    </th>
                     <td>
-                        <select name="sort">
+                        <select name="sort" id="coffeeSort">
                             <option value="Гватемала">Гватемала</option>
                             <option value="Арабика">Гватемала</option>
                             <option value="Робуста">Робуста</option>
@@ -42,56 +50,71 @@
                     </td>
                 </tr>
                 <tr>
-                    <th>Крепость обжарки</th>
+                    <th>
+                        <label for="strong">Крепость обжарки</label>
+                    </th>
                     <td>
                         <input
                             type="radio"
                             name="strong"
                             value="Крепкая"
-                            id="1"
+                            id="strong"
                         />
-                        <label>Крепкая</label>
+                        <label for="strong">Крепкая</label>
                         <br />
                         <input
                             type="radio"
                             name="strong"
                             value="Средняя"
-                            id="2"
+                            id="medium"
                         />
-                        <label>Средняя</label>
+                        <label for="medium">Средняя</label>
                         <br />
                         <input
                             type="radio"
                             name="strong"
                             value="Легкая"
-                            id="3"
+                            id="light"
                         />
-                        <label>Легкая</label>
+                        <label for="light">Легкая</label>
                     </td>
                 </tr>
                 <tr>
-                    <th>Изображение</th>
+                    <th>
+                        <label for="coffeeImage">Изображение</label>
+                    </th>
                     <td>
                         <input
                             type="url"
                             placeholder="http://site.com/image.png"
                             name="image"
+                            id="coffeeImage"
                         />
                     </td>
                 </tr>
                 <tr>
-                    <th>Стоимость напитка</th>
+                    <th>
+                        <label for="coffeeCost">Стоимость напитка</label>
+                    </th>
                     <td>
-                        <input type="number" placeholder="100" name="cost" />
+                        <input
+                            type="number"
+                            placeholder="100"
+                            name="cost"
+                            id="coffeeCost"
+                        />
                     </td>
                 </tr>
                 <tr>
-                    <th>Описание</th>
+                    <th>
+                        <label for="coffeeDesc">Описание</label>
+                    </th>
                     <td>
                         <textarea
                             name="description"
                             placeholder="Немного про напиток"
                             rows="5"
+                            id="coffeeDesc"
                         ></textarea>
                     </td>
                 </tr>
