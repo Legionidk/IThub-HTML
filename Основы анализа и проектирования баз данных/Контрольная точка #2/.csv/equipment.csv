@@ -1,0 +1,8 @@
+id,equipmentType,equipmentBrand,equipmentModel,equipmentComponents
+1,Ноутбук,Asus,RT-1000,"Intel Core i6"
+2,Принтер,HP,WV123,NULL
+3,Сканер,Samsung,SH-200,NULL
+4,Ноутбук,Asus,RT-1000,"8Gb RAM"
+5,Ноутбук,Asus,RT-1000,"100Gb SSD"
+6,Ноутбук,Asus,RT-1000,"256Gb HDD"
+7,Ноутбук,Asus,RT-1000,"Windows 8.1"

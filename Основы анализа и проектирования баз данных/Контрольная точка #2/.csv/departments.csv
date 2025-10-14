@@ -1,0 +1,8 @@
+id,departmentName,departmentHeadLogin,departmentWorkersLogin
+1,"Отдел кадров",clt_User_1,clt_User_2
+2,"Отдел договоров и услуг",clt_User_4,clt_User_5
+3,"Отдел кадров",clt_User_7,NULL
+4,"Отдел бухгалтерии",clt_User_8,clt_User_9
+5,"Отдел кадров",clt_User_1,clt_User_3
+6,"Отдел договоров и услуг",clt_User_4,clt_User_6
+7,"Отдел бухгалтерии",clt_User_8,clt_User_10

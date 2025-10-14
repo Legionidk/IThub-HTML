@@ -1,0 +1,5 @@
+id,employeesLastname,employeesName,employeesMiddlename,employeesLogin,employeesPassword,employeesPosition
+1,Иванович,Иванов,Иван,User_01,Pa$$vv0RD,"Главный по распределению задач"
+2,Петрович,Петров,Пётр,User_02,Pa$$vv0RD,"Заместитель главного распределителя"
+3,Алексеевич,Алексеев,Алексей,User_03,Pa$$v0RD,"Технический эксперт"
+4,Андреевич,Андреев,Андрей,User_04,Pa$$vv0RD,"Помощник технического эксперта"
