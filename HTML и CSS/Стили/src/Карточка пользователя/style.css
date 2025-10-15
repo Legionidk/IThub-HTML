@@ -1,0 +1,75 @@
+.user-card {
+    height: fit-content;
+    width: 300px;
+    margin: 0 auto;
+    padding: 30px;
+    border: 2px solid #e0e0e0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    text-align: center;
+}
+
+.avatar {
+    border: 5px solid #4ecdc4;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+    background-image: url("https://i.pinimg.com/736x/75/0f/3b/750f3b4754a893fa405afc1127a9fcad.jpg");
+    background-size: cover;
+}
+
+.name {
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.profession {
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(0, 0, 0, 0.75);
+}
+
+.description {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.stats {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    width: auto;
+    height: fit-content;
+    padding: 5px;
+}
+
+.stat {
+    margin: 5px 30px;
+    display: inline-block;
+}
+
+.stat-number {
+    font-size: 150%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #4ecdc4;
+}
+
+.stat-label {
+    font-size: 0.9em;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.contact-btn {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding: 12px 30px;
+    border: 2px solid #4ecdc4;
+    color: white;
+    background-color: #4ecdc4;
+    border-radius: 25px;
+    margin-top: 25px;
+}
