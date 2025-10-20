@@ -1,0 +1,31 @@
+.container {
+    border: 2px dashed #333;
+    padding: 10px;
+    display: flex;
+
+    /* Ряд в обратном порядке */
+    flex-direction: row-reverse;
+
+    /* Перенос на новую строку */
+    flex-wrap: wrap;
+
+    /* Выравнивание по центру главной оси (горизонт) */
+    justify-content: center;
+
+    /* Выравнивание по центру поперечной оси (вертикаль) */
+    height: 400px;
+    align-content: center;
+
+    /* Приказ занимать всю высоту страницы (одинаковые расстояние снизу и сверху) */
+    align-content: space-around;
+}
+
+.item {
+    background-color: lightseagreen;
+    color: white;
+    padding: 20px;
+    margin: 5px;
+    text-align: center;
+    font-size: 24px;
+    min-width: 50px; /* Чтобы элементы не сжимались слишком сильно */
+}
