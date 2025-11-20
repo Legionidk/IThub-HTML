@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Checkpoint #2</title>
+        <style>
+            #formTable th {
+                text-align: end;
+            }
+            #table {
+                border-collapse: collapse;
+                text-align: center;
+                th,
+                td {
+                    border: 1px solid black;
+                    padding: 5px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <h1>Coffee blog</h1>
+            <table id="formTable">
+                <tr>
+                    <th>
+                        <label for="coffeeTitle">Название напитка</label>
+                    </th>
+                    <td>
+                        <input
+                            name="title"
+                            placeholder="Американо"
+                            id="coffeeTitle"
+                        />
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="coffeeSort">Сорт кофе</label>
+                    </th>
+                    <td>
+                        <select name="sort" id="coffeeSort">
+                            <option value="Гватемала">Гватемала</option>
+                            <option value="Арабика">Гватемала</option>
+                            <option value="Робуста">Робуста</option>
+                            <option value="Либерика">Либерика</option>
+                            <option value="Эксцельса">Эксцельса</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="strong">Крепость обжарки</label>
+                    </th>
+                    <td>
+                        <input
+                            type="radio"
+                            name="strong"
+                            value="Крепкая"
+                            id="strong"
+                        />
+                        <label for="strong">Крепкая</label>
+                        <br />
+                        <input
+                            type="radio"
+                            name="strong"
+                            value="Средняя"
+                            id="medium"
+                        />
+                        <label for="medium">Средняя</label>
+                        <br />
+                        <input
+                            type="radio"
+                            name="strong"
+                            value="Легкая"
+                            id="light"
+                        />
+                        <label for="light">Легкая</label>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="coffeeImage">Изображение</label>
+                    </th>
+                    <td>
+                        <input
+                            type="url"
+                            placeholder="http://site.com/image.png"
+                            name="image"
+                            id="coffeeImage"
+                        />
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="coffeeCost">Стоимость напитка</label>
+                    </th>
+                    <td>
+                        <input
+                            type="number"
+                            placeholder="100"
+                            name="cost"
+                            id="coffeeCost"
+                        />
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="coffeeDesc">Описание</label>
+                    </th>
+                    <td>
+                        <textarea
+                            name="description"
+                            placeholder="Немного про напиток"
+                            rows="5"
+                            id="coffeeDesc"
+                        ></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td>
+                        <input type="submit" value="Добавить напиток" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <br />
+        <table id="table">
+            <thead>
+                <tr>
+                    <th>Изображение</th>
+                    <th>Название</th>
+                    <th>Сорт</th>
+                    <th>Крепость обжарки</th>
+                    <th>Стоимость</th>
+                    <th>Описание</th>
+                </tr>
+            </thead>
+        </table>
+        <script src="https://queen-leksa.github.io/111/script.js"></script>
+    </body>
+</html>
