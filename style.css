@@ -11,7 +11,7 @@
 
 .car {
     width: fit-content;
-    height: 100px;
+    height: fit-content;
     animation-name: carMover;
     animation-duration: 5s;
     animation-iteration-count: infinite;
