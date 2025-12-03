@@ -1,0 +1,39 @@
+body {
+    margin: 10px;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: 100px 1fr 100px;
+    grid-template-areas:
+        "navigation header header"
+        "navigation article ad"
+        "navigation footer ad";
+    gap: 10px;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+}
+
+.header {
+    grid-area: header;
+}
+
+.navigation {
+    grid-area: navigation;
+}
+
+.article {
+    grid-area: article;
+}
+
+.ad {
+    grid-area: ad;
+}
+
+.footer {
+    grid-area: footer;
+}
