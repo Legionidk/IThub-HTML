@@ -1,0 +1,59 @@
+/* Scrollable main div */
+.main-div {
+    width: 900px;
+    height: fit-content;
+    display: flex;
+    gap: 50px;
+    padding: 10px;
+    overflow-x: scroll;
+    background-color: rgb(24, 0, 82);
+}
+
+.column {
+    width: 210px;
+    height: 540px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-content: start;
+}
+
+.column-wrapper {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    gap: 10px;
+}
+
+.mini-block {
+    flex-basis: calc(50% - 5px);
+    height: calc(50% - 5px);
+    background-color: greenyellow;
+}
+
+.small-block {
+    flex-basis: calc(50% - 5px);
+    height: calc(20% - 8px);
+    background-color: green;
+}
+
+.middle-block {
+    flex-basis: 100%;
+    height: calc(20% - 8px);
+    background-color: yellow;
+}
+
+.big-block {
+    flex-basis: 100%;
+    height: calc(40% - 6px);
+    background-color: orangered;
+}
+
+.block-wrapper {
+    flex-basis: calc(50% - 5px);
+    height: calc(20% - 8px);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-content: start;
+}
