@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Font Awesome Практика</title>
+        <script
+            src="https://kit.fontawesome.com/6cc4f903af.js"
+            crossorigin="anonymous"
+        ></script>
+        <style>
+            * {
+                box-sizing: border-box;
+                font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            }
+
+            body {
+                max-width: 1000px;
+                margin: 0 auto;
+                padding: 20px;
+                background-color: #f8f9fa;
+            }
+
+            section {
+                background: white;
+                border-radius: 10px;
+                padding: 25px;
+                margin-bottom: 30px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            }
+
+            h1 {
+                color: #2c3e50;
+                text-align: center;
+                margin-bottom: 40px;
+            }
+
+            h2 {
+                color: #3498db;
+                border-bottom: 2px solid #eee;
+                padding-bottom: 10px;
+                margin-top: 0;
+            }
+
+            .example {
+                padding: 15px;
+                background: #f8f9fa;
+                border-radius: 8px;
+                margin: 15px 0;
+            }
+
+            .code {
+                background: #2c3e50;
+                color: #ecf0f1;
+                padding: 10px;
+                border-radius: 5px;
+                font-family: "Courier New", monospace;
+                margin-top: 10px;
+            }
+
+            .icon-row {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                flex-wrap: wrap;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>🖌 Практическое задание: Font Awesome</h1>
+
+        <section id="block1">
+            <h2>1. Типы иконок</h2>
+            <p>Font Awesome предлагает несколько стилей иконок:</p>
+            <div class="example">
+                <div class="icon-row">
+                    <div>
+                        <i class="fa-solid fa-user fa-3x"></i>
+                        <p>Solid (fas)</p>
+                    </div>
+                    <div>
+                        <i class="fa-regular fa-user fa-3x"></i>
+                        <p>Regular (far)</p>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-github fa-3x"></i>
+                        <p>Brands (fab)</p>
+                    </div>
+                </div>
+
+                <div class="code">
+                    <code>
+                        &lt;i class="fa-solid fa-user fa-3x">&lt;/i> <br />
+                        &lt;i class="far fa-user fa-3x">&lt;/i> <br />
+                        &lt;i class="fab fa-github fa-3x">&lt;/i>
+                    </code>
+                </div>
+            </div>
+        </section>
+
+        <section id="block2">
+            <h2>2. Размеры иконок</h2>
+            <p>Font Awesome предлагает несколько размеров иконок:</p>
+            <div class="example">
+                <div class="icon-row">
+                    <div>
+                        <i class="fa-brands fa-github fa-lg"></i>
+                        <p>fa-lg</p>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-github fa-2x"></i>
+                        <p>fa-2x</p>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-github fa-3x"></i>
+                        <p>fa-3x</p>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-github fa-4x"></i>
+                        <p>fa-4x</p>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-github fa-5x"></i>
+                        <p>fa-5x</p>
+                    </div>
+                </div>
+
+                <div class="code">
+                    <code>
+                        &lt;i class="fa-brands fa-github fa-lg">&lt;/i> <br />
+                        &lt;i class="fa-brands fa-github fa-2x">&lt;/i> <br />
+                        &lt;i class="fa-brands fa-github fa-3x">&lt;/i> <br />
+                        &lt;i class="fa-brands fa-github fa-4x">&lt;/i> <br />
+                        &lt;i class="fa-brands fa-github fa-5x">&lt;/i> <br />
+                    </code>
+                </div>
+            </div>
+        </section>
+
+        <section id="block3">
+            <h2>3. Иконки в списках</h2>
+            <p>С помощью Font Awesome можно создавать кастомные списки:</p>
+            <div class="example">
+                <ul class="fa-ul">
+                    <li>
+                        <span class="fa-li"
+                            ><i class="fa-brands fa-google"></i></span
+                        >Google
+                    </li>
+                    <li>
+                        <span class="fa-li"
+                            ><i class="fa-brands fa-github"></i></span
+                        >GitHub
+                    </li>
+                    <li>
+                        <span class="fa-li"
+                            ><i class="fa-brands fa-telegram"></i></span
+                        >Telegram
+                    </li>
+                </ul>
+
+                <div class="code">
+                    <code>
+                        &lt;li> <br />
+                        &emsp;&lt;span class="fa-li"> <br />
+                        &emsp;&emsp;&lt;i class="fa-brands fa-google">&lt;/i>
+                        <br />
+                        &emsp;&lt;/span>Google <br />
+                        &lt;/li>
+                        <br />
+                        <br />
+                        &lt;li> <br />
+                        &emsp;&lt;span class="fa-li"> <br />
+                        &emsp;&emsp;&lt;i class="fa-brands fa-github">&lt;/i>
+                        <br />
+                        &emsp;&lt;/span>GitHub <br />
+                        &lt;/li>
+                        <br />
+                        <br />
+                        &lt;li> <br />
+                        &emsp;&lt;span class="fa-li"> <br />
+                        &emsp;&emsp;&lt;i class="fa-brands fa-telegram">&lt;/i>
+                        <br />
+                        &emsp;&lt;/span>Telegram <br />
+                        &lt;/li>
+                        <br />
+                    </code>
+                </div>
+            </div>
+        </section>
+
+        <section id="block4">
+            <h2>4. Анимированные иконки</h2>
+            <p>Font Awesome позволяет создавать простые анимации:</p>
+            <div class="example">
+                <div class="icon-row">
+                    <div>
+                        <i class="fa-solid fa-cog fa-3x fa-spin"></i>
+                        <p>fa-spin</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-3x fa-heart fa-beat"></i>
+                        <p>fa-beat</p>
+                    </div>
+                    <div>
+                        <i
+                            class="fa-solid fa-3x fa-triangle-exclamation fa-fade"
+                        ></i>
+                        <p>fa-fade</p>
+                    </div>
+                </div>
+
+                <div class="code">
+                    <code>
+                        &lt;i class="fa-solid fa-cog fa-3x fa-spin">&lt;/i>
+                        <br />
+                        &lt;i class="fa-solid fa-3x fa-heart fa-beat">&lt;/i>
+                        <br />
+                        &lt;i class="fa-solid fa-3x fa-triangle-exclamation
+                        fa-fade">&lt;/i>
+                    </code>
+                </div>
+            </div>
+        </section>
+
+        <section id="block5">
+            <h2>5. Трансформация</h2>
+            <p>Font Awesome предлагает несколько размеров иконок:</p>
+            <div class="example">
+                <div class="icon-row">
+                    <div>
+                        <i class="fa-brands fa-github fa-3x fa-rotate-90"></i>
+                        <p>fa-rotate-90</p>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-github fa-3x fa-rotate-180"></i>
+                        <p>fa-rotate-180</p>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-github fa-3x fa-rotate-270"></i>
+                        <p>fa-rotate-270</p>
+                    </div>
+                    <div>
+                        <i
+                            class="fa-brands fa-github fa-3x fa-flip-horizontal"
+                        ></i>
+                        <p>fa-flip-horizontal</p>
+                    </div>
+                    <div>
+                        <i
+                            class="fa-brands fa-github fa-3x fa-flip-vertical"
+                        ></i>
+                        <p>fa-flip-vertical</p>
+                    </div>
+                </div>
+
+                <div class="code">
+                    <code>
+                        &lt;i class="fa-brands fa-github fa-3x
+                        fa-rotate-90">&lt;/i> <br />
+                        &lt;i class="fa-brands fa-github fa-3x
+                        fa-rotate-180">&lt;/i> <br />
+                        &lt;i class="fa-brands fa-github fa-3x
+                        fa-rotate-270">&lt;/i> <br />
+                        &lt;i class="fa-brands fa-github fa-3x
+                        fa-flip-horizontal">&lt;/i> <br />
+                        &lt;i class="fa-brands fa-github fa-3x
+                        fa-flip-vertical">&lt;/i>
+                    </code>
+                </div>
+            </div>
+        </section>
+
+        <section id="block5">
+            <h2>6. Комбинированные иконки</h2>
+            <p>
+                С помощью Font Awesome можно создавать комбинированные иконки:
+            </p>
+            <div class="example">
+                <div class="icon-row">
+                    <div>
+                        <i
+                            class="fa-brands fa-twitter fa-2x fa-border"
+                            style="--fa-border-color: black"
+                        ></i>
+                        <p>fa-border</p>
+                    </div>
+                    <div>
+                        <span class="fa-stack fa-2x">
+                            <i
+                                class="fa-solid fa-square fa-stack-2x"
+                                style="color: black"
+                            ></i>
+                            <i
+                                class="fa-brands fa-twitter fa-stack-1x"
+                                style="color: white"
+                            ></i>
+                        </span>
+                        <p>fa-stack</p>
+                    </div>
+                    <div>
+                        <span class="fa-stack fa-3x">
+                            <i
+                                class="fa-brands fa-twitter fa-stack-1x"
+                                style="color: aqua"
+                            ></i>
+                            <i
+                                class="fa-solid fa-ban fa-stack-2x"
+                                style="color: Tomato"
+                            ></i>
+                        </span>
+                        <p>Nahui twitter, all my homies is using MAX</p>
+                    </div>
+                </div>
+
+                <div class="code">
+                    <code>
+                        &lt;i class="fa-brands fa-twitter fa-2x fa-border"
+                        style="--fa-border-color: black" >&lt;/i>
+                        <br />
+                        <br />
+                        &lt;span class="fa-stack fa-2x"> <br />
+                        &emsp;&lt;i class="fa-solid fa-square fa-stack-2x"
+                        style="color: black" >&lt;/i> <br />
+                        &emsp;&lt;i class="fa-brands fa-twitter fa-stack-1x"
+                        style="color: white" >&lt;/i> <br />
+                        &lt;/span>
+                        <br />
+                        <br />
+                        &lt;span class="fa-stack fa-3x"> <br />
+                        &emsp;&lt;i class="fa-brands fa-twitter fa-stack-1x"
+                        style="color: aqua">&lt;/i> <br />
+                        &emsp;&lt;i class="fa-solid fa-ban fa-stack-2x"
+                        style="color: Tomato" >&lt;/i> <br />
+                        &lt;/span>
+                    </code>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
