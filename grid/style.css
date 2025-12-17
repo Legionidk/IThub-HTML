@@ -9,6 +9,7 @@ body {
     height: fit-content;
 
     display: grid;
+    grid-auto-flow: dense;
     gap: 10px;
     grid-template-columns: repeat(8, 1fr);
 }
