@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            body {
+                display: flex;
+                gap: 10px;
+            }
+
+            td {
+                border: 1px solid black;
+                text-align: center;
+                padding: 10px;
+            }
+
+            table {
+                border-collapse: collapse;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <button onclick="window.location.href = 'index.html'">
+            < Back to task one
+        </button>
+
+        <button onclick="addNumber()">Add number in table</button>
+
+        <script>
+            const randomNumbers = [...Array(30)].map(
+                (e) => ~~(Math.random() * 100),
+            );
+
+            let numberPosition = 0;
+
+            for (const row of document.body.firstElementChild.rows) {
+                for (const cell of row.cells) {
+                    cell.textContent = randomNumbers[numberPosition];
+
+                    if (randomNumbers[numberPosition] >= 50) {
+                        cell.style.backgroundColor = "orange";
+                    }
+
+                    numberPosition++;
+                }
+            }
+
+            // i hate using array in this task so here a better solution
+            // for (const row of document.body.firstElementChild.rows) {
+            //     for (const cell of row.cells) {
+            //         cell.textContent = ~~(Math.random() * 100);
+            //
+            //         if (cell.textContent >= 50) {
+            //             cell.style.backgroundColor = "orange";
+            //         }
+            //     }
+            // }
+        </script>
+    </body>
+</html>
