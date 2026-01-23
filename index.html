@@ -19,6 +19,10 @@
             table {
                 border-collapse: collapse;
             }
+
+            button {
+                height: fit-content;
+            }
         </style>
     </head>
     <body>
@@ -67,11 +71,12 @@
             </tbody>
         </table>
 
-        <button onclick="window.location.href = 'index2.html'">
-            Go to task two >
-        </button>
+        <button onclick="addNumber()">Add new number</button>
 
         <script>
+            const table = document.body.firstElementChild;
+            let currentRow = table.rows[table.rows.length - 1];
+
             const randomNumbers = [...Array(30)].map(
                 (e) => ~~(Math.random() * 100),
             );
@@ -90,16 +95,36 @@
                 }
             }
 
-            // i hate using array in this task so here a better solution
-            // for (const row of document.body.firstElementChild.rows) {
-            //     for (const cell of row.cells) {
-            //         cell.textContent = ~~(Math.random() * 100);
-            //
-            //         if (cell.textContent >= 50) {
-            //             cell.style.backgroundColor = "orange";
-            //         }
-            //     }
-            // }
+            function addNumber() {
+                if (
+                    currentRow.cells[currentRow.cells.length - 1].innerHTML !==
+                    ""
+                ) {
+                    const newRow = `
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    `;
+
+                    table.firstElementChild.innerHTML += newRow;
+                    currentRow = table.rows[table.rows.length - 1];
+                }
+
+                for (const cell of currentRow.cells) {
+                    if (cell.innerHTML === "") {
+                        cell.innerHTML = ~~(Math.random() * 100);
+                        if (cell.innerHTML >= 50) {
+                            cell.style.backgroundColor = "orange";
+                        }
+                        return;
+                    }
+                }
+            }
         </script>
     </body>
 </html>
