@@ -23,6 +23,8 @@ function moveFixedSlider(clientX) {
 
     const percent = (pos / fixedSliderRect.width) * 100;
     const step = Math.round(percent / 20) * 20;
+
+    document.querySelector("p").textContent = step;
     fixedDot.style.left = step + "%";
 }
 

@@ -41,6 +41,9 @@ body {
 }
 
 .dot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: absolute;
     transform: translateX(-50%);
     height: 20px;
@@ -49,6 +52,11 @@ body {
     border-radius: 50%;
     outline: 0px lightgray solid;
     cursor: pointer;
+
+    p {
+        margin-top: 25px;
+        user-select: none;
+    }
 }
 
 .dot:hover {
