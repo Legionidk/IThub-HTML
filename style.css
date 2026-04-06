@@ -12,7 +12,7 @@ body {
     position: relative;
     height: 10px;
     width: 400px;
-    background-color: greenyellow;
+    background-color: lightgray;
     border-radius: 10px;
 }
 
@@ -22,7 +22,7 @@ body {
     position: relative;
     height: 10px;
     width: 400px;
-    background-color: orange;
+    background-color: lightgray;
     border-radius: 10px;
 }
 

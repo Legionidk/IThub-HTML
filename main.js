@@ -24,8 +24,9 @@ function moveFixedSlider(clientX) {
     const percent = (pos / fixedSliderRect.width) * 100;
     const step = Math.round(percent / 20) * 20;
 
-    document.querySelector("p").textContent = step;
-    fixedDot.style.left = step + "%";
+    fixedDot.style.left = `${step}%`;
+    fixedSlider.querySelector("p").textContent = step;
+    fixedSlider.style.background = `linear-gradient(to right, orange ${step}%, gainsboro ${step}%)`; // thx misha for code snippet
 }
 
 slider.addEventListener("click", (e) => {
@@ -57,15 +58,21 @@ document.addEventListener("mousemove", (e) => {
 
         if (pos > sliderRect.width) {
             dot.style.left = "100%";
+            slider.style.background = "yellowgreen";
             return;
         }
 
         if (pos < 0) {
             dot.style.left = "0px";
+            slider.style.background = "lightgray";
             return;
         }
 
-        dot.style.left = pos + "px";
+        const percent = Math.round((pos / sliderRect.width) * 100);
+
+        dot.style.left = `${pos}px`;
+        slider.querySelector("p").textContent = percent;
+        slider.style.background = `linear-gradient(to right, yellowgreen ${pos}px, lightgray ${pos}px)`; // thx misha for code snippet
     }
 
     if (fixedDotDraggingToggle) {
